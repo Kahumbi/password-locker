@@ -17,3 +17,43 @@ class Credential:
         '''
 
         Credential.credential_list.append(self)
+
+    def delete_credential(self):
+
+        '''
+        delete_credential method deletes a saved credential 
+        '''
+
+        Credential.credential_list.remove(self)
+
+    @classmethod
+    def find_by_accountname(cls,accountname):
+        '''
+        Method that takes in an accountname and returns a credential 
+
+        '''
+
+        for credential in cls.credential_list:
+            if credential.accountname == accountname:
+                return credential
+
+
+    @classmethod
+    def credential_exist(cls,password):
+        '''
+        Method that checks if a password exists from the credential list.
+      
+        '''
+        for credential in cls.credential_list:
+            if credential.password == password:
+                    return True
+
+        return False
+
+    
+    @classmethod
+    def display_credentials(cls):
+        '''
+        method that returns the credential list
+        '''
+        return cls.credential_list
