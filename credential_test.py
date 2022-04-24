@@ -18,8 +18,14 @@ class TestContact(unittest.TestCase):
         self.assertEqual(self.new_credential.password,"zxcvb")
        
 
+    def test_save_credential(self):
+        '''
+        test to save credentials
+        '''
+        self.new_credential.save_credential() # saving the new credential
+        self.assertEqual(len(Credential.credential_list),1)
 
-if __name__ == '__main__':
+if __name__ ==  '__main__':
     unittest.main()
 
    
