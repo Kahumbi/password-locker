@@ -28,6 +28,15 @@ def find_credential(accountname):
 
 def check_existing_credentials(password)
 
+    #function that checks if credentials exist
+
+    return credentials.exist(password)
+
+def display_credentials():
+    
+    #function that displays credentials
+
+    return Credential.display_credentials()
     
 
 
