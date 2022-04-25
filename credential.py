@@ -39,13 +39,13 @@ class Credential:
 
 
     @classmethod
-    def credential_exist(cls,password):
+    def credential_exist(cls,accountname):
         '''
-        Method that checks if a password exists from the credential list.
+        Method that checks if a accountname exists from the credential list.
       
         '''
         for credential in cls.credential_list:
-            if credential.password == password:
+            if credential.accountname == accountname:
                     return True
 
         return False
