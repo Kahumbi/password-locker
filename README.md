@@ -13,17 +13,17 @@ Run python3 to open the python shell R.E.P.L then run the specific run file to r
 
 # Behaviour Driven Development
 1. Displays Intro Message to user
-  OUTPUT: "Hello Welcome to your contact list. What is your name?"
-  INPUT: "David"
-  OUTPUT: "Hello David. what would you like to do?"
+  * OUTPUT: "Hello Welcome to your contact list. What is your name?"
+  * INPUT: "David"
+  * OUTPUT: "Hello David. what would you like to do?"
 2. Enter Short Code
-  INPUT: "cc"  This is where you create the credential
-  INPUT: "accountname", "username" & "password"
-  OUTPUT: "New Contact David is created & saved" 
+  * INPUT: "cc"  This is where you create the credential
+  * INPUT: "accountname", "username" & "password"
+  * OUTPUT: "New Contact David is created & saved" 
 3. Enter Short Code
-  INPUT: "del"
-  INPUT: "accountname" - Search by accountname then delete all credentials associated with that account name including passwords and username.
-  OUTPUT: That credential was deleted. Returns credentials if it still exists.
+  * INPUT: "del"
+  * INPUT: "accountname" - Search by accountname then delete all credentials associated with that account name including passwords and username.
+  * OUTPUT: That credential was deleted. Returns credentials if it still exists.
 
 # Copyright & Liscence Info
 Copyright and liscence information for this application have been registered under MIT LISCENCE. The author of this app is David Kahumbi. The live link to site is on GITHUB 
